@@ -1,5 +1,4 @@
-node {
-
+job('Hello World') {
   // This defines job parameters that are populated before job is run or default is used
   parameters {
     booleanParam(defaultValue: true, description: '', name: 'flag')
