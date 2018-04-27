@@ -1,7 +1,5 @@
 job('Hello World') {
-  options {
-    buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: '30'))
-  }
+  logRotator(30, -1, 1, -1)
   steps {
     shell('echo "Hello World!"')
   }
