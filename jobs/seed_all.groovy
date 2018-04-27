@@ -6,8 +6,8 @@ job('Seed All') {
     dsl {
       external('jobs/*.groovy')  
       // default behavior
-      // removeAction('IGNORE')      
-      removeAction('DELETE')
+       removeAction('IGNORE')      
+      //removeAction('DELETE')
     }
   }
 }
