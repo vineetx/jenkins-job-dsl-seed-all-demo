@@ -13,11 +13,7 @@ job('Hello World') {
 
   // Options covers all other job properties or wrapper functions that apply to entire Pipeline.
   options {
-    buildDiscarder(logRotator(numToKeepStr:'1'))
-    disableConcurrentBuilds()
-    skipDefaultCheckout(true)
-    timeout(time: 5, unit: 'MINUTES')
-    timestamps()
+    buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: '30'))
   }
 
   stages {
