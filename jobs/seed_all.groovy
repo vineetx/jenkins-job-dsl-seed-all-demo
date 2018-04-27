@@ -1,6 +1,6 @@
 job('Seed All') {
   scm {
-    git ('https://github.com/robinbowes/jenkins-job-dsl-seed-all-demo.git')
+    git ('https://github.com/vineetx/jenkins-job-dsl-seed-all-demo.git')
   }
   steps {
     dsl {
