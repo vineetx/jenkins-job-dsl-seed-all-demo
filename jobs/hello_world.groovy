@@ -1,9 +1,9 @@
 job('Hello World') {
   // This defines job parameters that are populated before job is run or default is used
   parameters {
-    booleanParam(defaultValue: true, description: '', name: 'flag')
-    string(defaultValue: '', description: '', name: 'SOME_STRING')
-  }
+        booleanParam('FLAG', true)
+        choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
+    }
 
   // Triggers define how the job is triggered.
   // Jobs may still be triggered manually or by webhook as well here.
