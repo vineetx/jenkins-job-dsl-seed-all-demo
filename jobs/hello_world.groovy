@@ -11,11 +11,6 @@ job('Hello World') {
     cron('@daily')
   }
 
-  // Options covers all other job properties or wrapper functions that apply to entire Pipeline.
-  options {
-    buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: '30'))
-  }
-
   stages {
     stage("Hello World") {
       steps {
