@@ -1,5 +1,4 @@
-pipeline {
-  agent any
+node {
 
   // This defines job parameters that are populated before job is run or default is used
   parameters {
